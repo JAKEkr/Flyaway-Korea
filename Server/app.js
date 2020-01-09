@@ -2,11 +2,13 @@ require('dotenv').config();
 
 const express = require('express');
 const http = require('http');
-const logger = require('winston');
+const winston = require('./config/winston');
+const morgan = require('morgan');
 
 const app = express();
 
-app.use(express.json());
+app.use(express.json()); // Json parser
+app.use(morgan('combined', {stream: winston.stream}));
 
 // Set TCP port
 const port = process.env.PORT || '8888';
@@ -30,11 +32,11 @@ function onError(error) {
     // handle specific listen errors with friendly messages
     switch (error.code) {
         case 'EACCES':
-            console.error(bind + ' requires elevated privileges');
+            winston.info(bind + ' requires elevated privileges');
             process.exit(1);
             break;
         case 'EADDRINUSE':
-            console.error(bind + ' is already in use');
+            winston.info(bind + ' is already in use');
             process.exit(1);
             break;
         default:
@@ -47,5 +49,5 @@ function onListening() {
     const bind = typeof addr === 'string'
         ? 'pipe ' + addr
         : 'port ' + addr.port;
-    logger.('Listening on ' + bind);
+    winston.info('Listening on ' + bind);
 } // onListening()
