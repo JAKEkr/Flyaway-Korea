@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 
 // Define user schema
-const DepartureSchema = [new mongoose.Schema({
+const DepartureSchema = new mongoose.Schema({
     airline: {type: String, trim: true, required: true},    // 항공사
     flightId: {type: String, trim: true},                   // 편명
     scheduleDateTime: {type: String, trim: true},           // 예정시간
@@ -14,7 +14,7 @@ const DepartureSchema = [new mongoose.Schema({
     airportCode: {type: String, trim: true},                // 도착지공항코드
     cityCode: {type: String, trim: true},                   // 도착지국가코드
     terminalId: {type: String, trim: true}                  // 터미널
-})]; // array list schema
+});
 
 // Create new user document
 DepartureSchema.statics.create = function(payload) {
