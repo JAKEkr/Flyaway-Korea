@@ -27,6 +27,13 @@ protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 지원입니다.
 
 	DECLARE_MESSAGE_MAP()
+public:
+	CString url;
+
+	CListCtrl m_FacilityListView;
+	virtual void OnInitialUpdate();
+	afx_msg void OnBnClickedSerchbutton();
+	CString m_keyword;
 };
 
 

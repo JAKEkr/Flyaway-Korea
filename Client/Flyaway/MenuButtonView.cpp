@@ -67,7 +67,7 @@ void CMenuButtonView::OnInitialUpdate()
 	SetScaleToFitSize(rcClient.Size());
 
 	GetParentFrame()->RecalcLayout();
-	ResizeParentToFit(FALSE);
+	ResizeParentToFit();
 }
 
 void CMenuButtonView::OnBnClickedHomebutton()

@@ -126,7 +126,7 @@ afx_msg LRESULT CMainFrame::OnSwitchView(WPARAM wParam, LPARAM lParam)
 	Context.m_pCurrentDoc = ((CFlyawayApp*)AfxGetApp())->m_pDoc;
 	Context.m_pCurrentFrame = this;
 	Context.m_pNewDocTemplate = Context.m_pCurrentDoc->GetDocTemplate();
-	Context.m_pLastView = (CView*)m_wndSplitter.GetPane(0, 0);
+	Context.m_pLastView = (CView*)m_wndSplitter.GetPane(1, 0);
 
 	m_wndSplitter.DeleteView(1, 0);
 	m_wndSplitter.CreateView(1, 0, Context.m_pNewViewClass, lowerViewSize, &Context);
