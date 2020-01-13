@@ -4,7 +4,7 @@
   "description": "IIAIS Server",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon test.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +17,26 @@
   },
   "homepage": "https://github.com/JAKEkr/IIAIS#readme",
   "dependencies": {
+    "agenda": "^2.3.0",
     "app-root-path": "^3.0.0",
-    "dotenv": "^8.2.0",
+    "body-parser": "^1.19.0",
+    "cron": "^1.7.2",
     "express": "^4.17.1",
+    "halfstreamxml": "^0.2.1",
+    "mongodb": "^3.4.1",
+    "mongoose": "^5.8.7",
     "morgan": "^1.9.1",
-    "winston": "^3.2.1"
+    "node-cron": "^2.0.3",
+    "node-fetch": "^2.6.0",
+    "sax": "^1.2.4",
+    "shelljs": "^0.8.3",
+    "winston": "^3.2.1",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.4.23",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.2"
   }
 }
