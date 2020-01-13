@@ -34,6 +34,7 @@ public:
 	virtual void OnInitialUpdate();
 	afx_msg void OnBnClickedSerchbutton();
 	CString m_keyword;
+	afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
 };
 
 

@@ -27,6 +27,14 @@ protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 지원입니다.
 
 	DECLARE_MESSAGE_MAP()
+public:
+	CComboBox m_combo;
+	virtual void OnInitialUpdate();
+	afx_msg void OnComboBoxSelected();
+	CStatic m_map;
+	CListBox m_listT1;
+	CListBox m_listT2;
+	afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
 };
 
 

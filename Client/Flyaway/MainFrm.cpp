@@ -47,11 +47,12 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 		cs.hMenu = NULL;              // no menu for this window
 	}
 
+	cs.style &= ~WS_MAXIMIZEBOX; //최대화 버튼 없에기
 	cs.lpszName = _T("FlyAway"); //메인 프레임 이름 지정
 	cs.style &= ~FWS_ADDTOTITLE; //메인 프레임 이름 지정
 
-	cs.cx = 1600; //메인 프레임 가로 크기입니다.
-	cs.cy = 1000;  //메인 프레임 세로 크기입니다.
+	cs.cx = 970; //메인 프레임 가로 크기입니다.
+	cs.cy = 700;  //메인 프레임 세로 크기입니다.
 
 	return TRUE;
 	/*

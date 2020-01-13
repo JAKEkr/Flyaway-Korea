@@ -30,6 +30,7 @@ void CFacilityView::DoDataExchange(CDataExchange* pDX)
 
 BEGIN_MESSAGE_MAP(CFacilityView, CFormView)
 	ON_BN_CLICKED(IDC_SerchButton, &CFacilityView::OnBnClickedSerchbutton)
+	ON_WM_CTLCOLOR()
 END_MESSAGE_MAP()
 
 
@@ -70,8 +71,36 @@ void CFacilityView::OnInitialUpdate()
 }
 
 
-void CFacilityView::OnBnClickedSerchbutton()
+void CFacilityView::OnBnClickedSerchbutton()//검색버튼을 누르면 생기는 이벤트입니다.
 {
 	UpdateData(TRUE);
 	((CFlyawayApp*)AfxGetApp())->m_pDoc->updateData(url + m_keyword);
+}
+
+
+HBRUSH CFacilityView::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
+{
+	HBRUSH hbr = CFormView::OnCtlColor(pDC, pWnd, nCtlColor);
+
+	// TODO:  여기서 DC의 특성을 변경합니다.
+	switch (nCtlColor) {
+	case CTLCOLOR_DLG:   /// 다이얼로그 배경색을 white로.
+	{
+		return (HBRUSH)GetStockObject(WHITE_BRUSH);
+		break;
+	}
+	case CTLCOLOR_BTN:    // 버튼의 배경색을 투명으로...
+	{
+		pDC->SetBkMode(TRANSPARENT);
+		return (HBRUSH)::GetStockObject(NULL_BRUSH);
+	}
+	case CTLCOLOR_STATIC:
+	{
+		pDC->SetTextColor(RGB(0, 255, 255));  // static text 글자색 변경
+		pDC->SetBkMode(TRANSPARENT);   // static text 배경색 투명
+		return (HBRUSH)::GetStockObject(NULL_BRUSH);
+	}
+	}
+	// TODO:  기본값이 적당하지 않으면 다른 브러시를 반환합니다.
+	return hbr;
 }

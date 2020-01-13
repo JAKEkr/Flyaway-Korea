@@ -141,9 +141,6 @@ BOOL CFlyawayDoc::updateData(CString url)
 {
     CString res = requestGET(url);
 
-    Json::Reader reader;
-    Json::Value root;
-
     return TRUE;
 }
 

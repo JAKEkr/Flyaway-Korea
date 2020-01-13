@@ -37,6 +37,14 @@ public:
 	afx_msg void OnBnClickedFacilitybutton();
 	afx_msg void OnBnClickedParkinglotbutton();
 	afx_msg void OnBnClickedClosebutton();
+	// 버튼 색깔을 바꾸기 위한 변수 설정입니다.
+//	CMFCButton m_Button_Home;
+	CMFCButton m_Button_Flight;
+	CMFCButton m_Button_Facility;
+	CMFCButton m_Button_Parking;
+	CMFCButton m_Button_Home;
+	CMFCButton m_Button_Close;
+	afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
 };
 
 

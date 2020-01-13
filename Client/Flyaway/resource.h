@@ -1,6 +1,6 @@
-Ôªø//{{NO_DEPENDENCIES}}
-// Microsoft Visual C++ÏóêÏÑú ÏÉùÏÑ±Ìïú Ìè¨Ìï® ÌååÏùºÏûÖÎãàÎã§.
-// Flyaway.rcÏóêÏÑú ÏÇ¨Ïö©ÎêòÍ≥† ÏûàÏäµÎãàÎã§.
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ø°º≠ ª˝º∫«— ∆˜«‘ ∆ƒ¿œ¿‘¥œ¥Ÿ.
+// Flyaway.rcø°º≠ ªÁøÎµ«∞Ì ¿÷Ω¿¥œ¥Ÿ.
 //
 #define IDD_ABOUTBOX                    100
 #define IDR_MAINFRAME                   128
@@ -12,6 +12,18 @@
 #define IDD_CFlightInfoView             314
 #define IDD_CFacilityView               315
 #define IDD_CParkinglotView             316
+#define IDB_BITMAP1                     318
+#define IDB_MAP_T2                      318
+#define IDB_MAP_T4                      318
+#define IDB_BITMAP2                     319
+#define IDB_MAP_T1                      319
+#define IDB_MAP_T3                      319
+#define IDB_BITMAP3                     320
+#define IDD_TAB1_DIALOG                 321
+#define IDD_TAB2_DIALOG                 323
+#define IDB_BITMAP4                     325
+#define IDB_BITMAP5                     326
+#define IDB_BITMAP6                     327
 #define IDC_BUTTON1                     1000
 #define IDC_FlightInfoButton            1000
 #define IDC_SerchButton                 1000
@@ -25,14 +37,20 @@
 #define IDC_CloseButton                 1004
 #define IDC_SearchEdit                  1005
 #define IDC_FacilityList                1006
+#define IDC_COMBO_SEND                  1007
+#define IDC_MAP                         1008
+#define IDC_LIST_T1                     1009
+#define IDC_LIST_T2                     1010
+#define IDC_STATIC_LOGO                 1011
+#define IDC_TAB1                        1012
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        318
+#define _APS_NEXT_RESOURCE_VALUE        328
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1007
+#define _APS_NEXT_CONTROL_VALUE         1013
 #define _APS_NEXT_SYMED_VALUE           317
 #endif
 #endif

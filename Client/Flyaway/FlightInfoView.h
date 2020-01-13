@@ -1,5 +1,6 @@
 ﻿#pragma once
-
+#include "TAB1.h"
+#include "TAB2.h"
 
 
 // CFlightInfoView 폼 보기
@@ -27,6 +28,14 @@ protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 지원입니다.
 
 	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
+	CTabCtrl m_mainTab;
+	CTAB1 m_tab1;
+	CTAB1 m_tab2;
+	CWnd* m_pwndShow;
+	virtual void OnInitialUpdate();
+	afx_msg void OnTcnSelchangeTab1(NMHDR* pNMHDR, LRESULT* pResult);
 };
 
 
