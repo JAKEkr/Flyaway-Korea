@@ -223,13 +223,16 @@
     <None Include="res\Flyaway.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\..\..\FlyAway로고\Flyaway.ico" />
+    <Image Include="..\..\..\FlyAway로고\plane.ico" />
     <Image Include="res\bitmap3.bmp" />
     <Image Include="res\bitmap4.bmp" />
     <Image Include="res\bitmap5.bmp" />
     <Image Include="res\bitmap6.bmp" />
+    <Image Include="res\Flyaway.ico" />
     <Image Include="res\t2.bmp" />
     <Image Include="res\t1.bmp" />
-    <Image Include="res\Flyaway.ico" />
+    <Image Include="res\Flyaway1.ico" />
     <Image Include="res\FlyawayDoc.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

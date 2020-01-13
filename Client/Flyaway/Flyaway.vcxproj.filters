@@ -107,9 +107,6 @@
     <Image Include="res\FlyawayDoc.ico">
       <Filter>리소스 파일</Filter>
     </Image>
-    <Image Include="res\Flyaway.ico">
-      <Filter>리소스 파일</Filter>
-    </Image>
     <Image Include="res\t1.bmp">
       <Filter>리소스 파일</Filter>
     </Image>
@@ -126,6 +123,18 @@
       <Filter>리소스 파일</Filter>
     </Image>
     <Image Include="res\bitmap6.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Flyaway1.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\..\FlyAway로고\Flyaway.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Flyaway.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\..\FlyAway로고\plane.ico">
       <Filter>리소스 파일</Filter>
     </Image>
   </ItemGroup>

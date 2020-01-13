@@ -24,6 +24,7 @@
 #define IDB_BITMAP4                     325
 #define IDB_BITMAP5                     326
 #define IDB_BITMAP6                     327
+#define IDI_ICON1                       328
 #define IDC_BUTTON1                     1000
 #define IDC_FlightInfoButton            1000
 #define IDC_SerchButton                 1000
@@ -48,7 +49,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        328
+#define _APS_NEXT_RESOURCE_VALUE        329
 #define _APS_NEXT_COMMAND_VALUE         32771
 #define _APS_NEXT_CONTROL_VALUE         1013
 #define _APS_NEXT_SYMED_VALUE           317

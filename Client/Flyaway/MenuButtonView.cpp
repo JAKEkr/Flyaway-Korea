@@ -76,8 +76,8 @@ void CMenuButtonView::OnInitialUpdate()
 
 	GetParentFrame()->RecalcLayout();
 	ResizeParentToFit();
-
-	//버튼 색상을 위한 설정입니다.
+	//버튼 폰트를 바꾸기 위한 설정입니다.
+    //버튼 색상을 위한 설정입니다.
 	m_Button_Home.EnableWindowsTheming(FALSE);
 	m_Button_Home.SetFaceColor(RGB(197, 197, 230), true);
 	m_Button_Home.SetTextColor(RGB(102, 102, 189)); //텍스트의 색상을 변경합니다

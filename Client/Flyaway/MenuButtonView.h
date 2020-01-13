@@ -30,13 +30,14 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	CMainFrame* m_pMainFrame;
-
 	virtual void OnInitialUpdate();
 	afx_msg void OnBnClickedHomebutton();
 	afx_msg void OnBnClickedFlightinfobutton();
 	afx_msg void OnBnClickedFacilitybutton();
 	afx_msg void OnBnClickedParkinglotbutton();
 	afx_msg void OnBnClickedClosebutton();
+	//폰트를 바꾸기 위한 변수입니다.
+	CFont m_Font;
 	// 버튼 색깔을 바꾸기 위한 변수 설정입니다.
 //	CMFCButton m_Button_Home;
 	CMFCButton m_Button_Flight;
