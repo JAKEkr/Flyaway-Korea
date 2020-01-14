@@ -6,13 +6,13 @@ const Departure = require('../models/schedule/departure');
 
 router.get('/arrivals', function(req, res) {
     Arrival.find()
-        .then(schedules => res.send({success: true, schedules}))
+        .then(arrival => res.send({success: true, type: "arrival", arrival}))
         .catch(error => res.send({success: false, error}));
 });
 
 router.get('/departures', function(req, res) {
     Departure.find()
-        .then(schedules => res.send({success: true, schedules}))
+        .then(departure => res.send({success: true, type: "departure", departure}))
         .catch(error => res.send({success: false, error}));
 });
 
