@@ -1,6 +1,0 @@
-GET http://openapi.airport.kr/openapi/service/StatusOfParking/getTrackingParking?ServiceKey=K3POVg15ZxYOa9zrxuVXDEuHy6bi8AZ9jcKR7QalKz2m7ZBBBv4wDYqIXuEy39oHLHo5rmWozqgEzVkSyK%2By2g%3D%3D
-
-###
-
-GET http://openapi.airport.kr/openapi/service/StatusOfParking/openapi.airport.co.kr/search/service/rest/AirportCodeList/getAirportCodeList?ServiceKey=K3POVg15ZxYOa9zrxuVXDEuHy6bi8AZ9jcKR7QalKz2m7ZBBBv4wDYqIXuEy39oHLHo5rmWozqgEzVkSyK%2By2g%3D%3D
-###
