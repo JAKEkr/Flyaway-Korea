@@ -1,0 +1,422 @@
+{
+    "_declaration": {
+        "$": {
+            "version": "1.0",
+            "encoding": "UTF-8"
+        }
+    },
+    "response": {
+        "header": {
+            "resultCode": {
+                "_text": "00"
+            },
+            "resultMsg": {
+                "_text": "NORMAL SERVICE."
+            }
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "arrordep": {
+                            "_text": "D"
+                        },
+                        "facilityitem": {
+                            "_text": "딸기에이드, 다래라떼, 잉글리쉬머핀"
+                        },
+                        "facilitynm": {
+                            "_text": "카페 청혜윰"
+                        },
+                        "floorinfo": {
+                            "_text": "1F"
+                        },
+                        "lcategorynm": {
+                            "_text": "식당"
+                        },
+                        "lcduty": {
+                            "_text": "N"
+                        },
+                        "lcnm": {
+                            "_text": "제1여객터미널 1층 일반지역 4번 출입구 부근"
+                        },
+                        "mcategorynm": {
+                            "_text": "스낵/카페/디저트 "
+                        },
+                        "servicetime": {
+                            "_text": " 06: 00 ~  22: 00"
+                        },
+                        "sn": {
+                            "_text": "1703"
+                        },
+                        "tel": {
+                            "_text": "032-743-2364"
+                        },
+                        "terminalid": {
+                            "_text": "P01"
+                        }
+                    },
+                    {
+                        "arrordep": {
+                            "_text": "D"
+                        },
+                        "facilityitem": {
+                            "_text": "영화관 2관/245석"
+                        },
+                        "facilitynm": {
+                            "_text": "CGV 영화관"
+                        },
+                        "floorinfo": {
+                            "_text": "1B"
+                        },
+                        "lcategorynm": {
+                            "_text": "안내・편의시설"
+                        },
+                        "lcduty": {
+                            "_text": "N"
+                        },
+                        "lcnm": {
+                            "_text": "제1여객터미널 교통센터 지하1층 중앙"
+                        },
+                        "mcategorynm": {
+                            "_text": "기타편의"
+                        },
+                        "scategorynm": {
+                            "_text": "영화관"
+                        },
+                        "servicetime": {
+                            "_text": " 09: 00 ~  23: 00"
+                        },
+                        "sn": {
+                            "_text": "1484"
+                        },
+                        "tel": {
+                            "_text": "1544-1122"
+                        },
+                        "terminalid": {
+                            "_text": "G02"
+                        }
+                    },
+                    {
+                        "arrordep": {
+                            "_text": "D"
+                        },
+                        "facilityitem": {
+                            "_text": "국내 택배"
+                        },
+                        "facilitynm": {
+                            "_text": "CJ대한통운"
+                        },
+                        "floorinfo": {
+                            "_text": "1F"
+                        },
+                        "lcategorynm": {
+                            "_text": "안내・편의시설"
+                        },
+                        "lcduty": {
+                            "_text": "N"
+                        },
+                        "lcnm": {
+                            "_text": "제1여객터미널 1층 일반지역 1번 출입구 부근"
+                        },
+                        "mcategorynm": {
+                            "_text": "택배/우편"
+                        },
+                        "scategorynm": {
+                            "_text": "택배/우편"
+                        },
+                        "servicetime": {
+                            "_text": " 07: 00 ~  21: 00"
+                        },
+                        "sn": {
+                            "_text": "1486"
+                        },
+                        "tel": {
+                            "_text": "032-743-5303"
+                        },
+                        "terminalid": {
+                            "_text": "P01"
+                        }
+                    },
+                    {
+                        "arrordep": {
+                            "_text": "D"
+                        },
+                        "facilityitem": {
+                            "_text": "국내 택배, 수하물 보관 및 포장"
+                        },
+                        "facilitynm": {
+                            "_text": "CJ대한통운"
+                        },
+                        "floorinfo": {
+                            "_text": "3F"
+                        },
+                        "lcategorynm": {
+                            "_text": "안내・편의시설"
+                        },
+                        "lcduty": {
+                            "_text": "N"
+                        },
+                        "lcnm": {
+                            "_text": "제1여객터미널 3층 일반지역 B 체크인카운터 부근"
+                        },
+                        "mcategorynm": {
+                            "_text": "택배/우편"
+                        },
+                        "scategorynm": {
+                            "_text": "택배/우편"
+                        },
+                        "servicetime": {
+                            "_text": " 00: 00 ~  24: 00"
+                        },
+                        "sn": {
+                            "_text": "1488"
+                        },
+                        "tel": {
+                            "_text": "032-743-5306"
+                        },
+                        "terminalid": {
+                            "_text": "P01"
+                        }
+                    },
+                    {
+                        "arrordep": {
+                            "_text": "D"
+                        },
+                        "facilityitem": {
+                            "_text": "음료, 빵, 과자류, 담배, 전화카드, 세면용품, 교통카드, 건전지, 문구류, 유심 등"
+                        },
+                        "facilitynm": {
+                            "_text": "CU"
+                        },
+                        "floorinfo": {
+                            "_text": "1F"
+                        },
+                        "lcategorynm": {
+                            "_text": "일반쇼핑"
+                        },
+                        "lcduty": {
+                            "_text": "N"
+                        },
+                        "lcnm": {
+                            "_text": "제1여객터미널 1층 일반지역 F 입국장 부근"
+                        },
+                        "mcategorynm": {
+                            "_text": "편의점/포장식품"
+                        },
+                        "servicetime": {
+                            "_text": " 00: 00 ~  24: 00"
+                        },
+                        "sn": {
+                            "_text": "1504"
+                        },
+                        "tel": {
+                            "_text": "032-743-0586"
+                        },
+                        "terminalid": {
+                            "_text": "P01"
+                        }
+                    },
+                    {
+                        "arrordep": {
+                            "_text": "D"
+                        },
+                        "facilityitem": {
+                            "_text": "음료, 빵, 과자류, 담배, 전화카드, 세면용품, 교통카드, 건전지, 문구류, 유심 등"
+                        },
+                        "facilitynm": {
+                            "_text": "CU"
+                        },
+                        "floorinfo": {
+                            "_text": "1B"
+                        },
+                        "lcategorynm": {
+                            "_text": "일반쇼핑"
+                        },
+                        "lcduty": {
+                            "_text": "N"
+                        },
+                        "lcnm": {
+                            "_text": "제1여객터미널 교통센터 지하1층 중앙"
+                        },
+                        "mcategorynm": {
+                            "_text": "편의점/포장식품"
+                        },
+                        "servicetime": {
+                            "_text": " 00: 00 ~  24: 00"
+                        },
+                        "sn": {
+                            "_text": "1501"
+                        },
+                        "tel": {
+                            "_text": "032-743-2569"
+                        },
+                        "terminalid": {
+                            "_text": "G02"
+                        }
+                    },
+                    {
+                        "arrordep": {
+                            "_text": "D"
+                        },
+                        "facilityitem": {
+                            "_text": "음료, 빵, 과자류, 담배, 전화카드, 세면용품, 교통카드, 건전지, 문구류 등"
+                        },
+                        "facilitynm": {
+                            "_text": "CU"
+                        },
+                        "floorinfo": {
+                            "_text": "3F"
+                        },
+                        "lcategorynm": {
+                            "_text": "일반쇼핑"
+                        },
+                        "lcduty": {
+                            "_text": "N"
+                        },
+                        "lcnm": {
+                            "_text": "제1여객터미널 3층 일반지역 H 체크인카운터 부근"
+                        },
+                        "mcategorynm": {
+                            "_text": "편의점/포장식품"
+                        },
+                        "servicetime": {
+                            "_text": " 00: 00 ~  24: 00"
+                        },
+                        "sn": {
+                            "_text": "1489"
+                        },
+                        "tel": {
+                            "_text": "032-743-2322"
+                        },
+                        "terminalid": {
+                            "_text": "P01"
+                        }
+                    },
+                    {
+                        "arrordep": {
+                            "_text": "D"
+                        },
+                        "facilityitem": {
+                            "_text": "음료, 빵, 과자류, 담배, 전화카드, 세면용품, 교통카드, 건전지, 문구류, 유심 등"
+                        },
+                        "facilitynm": {
+                            "_text": "CU"
+                        },
+                        "floorinfo": {
+                            "_text": "1F"
+                        },
+                        "lcategorynm": {
+                            "_text": "일반쇼핑"
+                        },
+                        "lcduty": {
+                            "_text": "N"
+                        },
+                        "lcnm": {
+                            "_text": "제1여객터미널 1층 일반지역 E 입국장 부근"
+                        },
+                        "mcategorynm": {
+                            "_text": "편의점/포장식품"
+                        },
+                        "servicetime": {
+                            "_text": " 00: 00 ~  24: 00"
+                        },
+                        "sn": {
+                            "_text": "1503"
+                        },
+                        "tel": {
+                            "_text": "032-743-0585"
+                        },
+                        "terminalid": {
+                            "_text": "P01"
+                        }
+                    },
+                    {
+                        "arrordep": {
+                            "_text": "D"
+                        },
+                        "facilityitem": {
+                            "_text": "음료, 빵, 과자류, 담배, 전화카드, 세면용품, 교통카드, 건전지, 문구류, 유심 등"
+                        },
+                        "facilitynm": {
+                            "_text": "CU"
+                        },
+                        "floorinfo": {
+                            "_text": "1F"
+                        },
+                        "lcategorynm": {
+                            "_text": "일반쇼핑"
+                        },
+                        "lcduty": {
+                            "_text": "N"
+                        },
+                        "lcnm": {
+                            "_text": "제1여객터미널 1층 일반지역 B 입국장 부근"
+                        },
+                        "mcategorynm": {
+                            "_text": "편의점/포장식품"
+                        },
+                        "servicetime": {
+                            "_text": " 00: 00 ~  24: 00"
+                        },
+                        "sn": {
+                            "_text": "1516"
+                        },
+                        "tel": {
+                            "_text": "032-743-0587"
+                        },
+                        "terminalid": {
+                            "_text": "P01"
+                        }
+                    },
+                    {
+                        "arrordep": {
+                            "_text": "D"
+                        },
+                        "facilityitem": {
+                            "_text": "꽃다발, 화분, 아로마 욕실용품, 팬시"
+                        },
+                        "facilitynm": {
+                            "_text": "FLOPORT 꽃집"
+                        },
+                        "floorinfo": {
+                            "_text": "1F"
+                        },
+                        "lcategorynm": {
+                            "_text": "일반쇼핑"
+                        },
+                        "lcduty": {
+                            "_text": "N"
+                        },
+                        "lcnm": {
+                            "_text": "제1여객터미널 1층 일반지역 8번 출입구 부근"
+                        },
+                        "mcategorynm": {
+                            "_text": "꽃"
+                        },
+                        "servicetime": {
+                            "_text": " 06: 30 ~  21: 00"
+                        },
+                        "sn": {
+                            "_text": "1502"
+                        },
+                        "tel": {
+                            "_text": "032-743-4780"
+                        },
+                        "terminalid": {
+                            "_text": "P01"
+                        }
+                    }
+                ]
+            },
+            "numOfRows": {
+                "_text": "10"
+            },
+            "pageNo": {
+                "_text": "1"
+            },
+            "totalCount": {
+                "_text": "372"
+            }
+        }
+    }
+}

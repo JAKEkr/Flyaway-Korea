@@ -1,10 +1,6 @@
 const mongoose=require('mongoose')
 
-const parkinglotSchema=new mongoose.Schema({
-    datetm: {
-        type: Date, 
-        trim: true
-    },           
+const parkinglotSchema=new mongoose.Schema({           
     floor: {
         type: String, 
         trim: true, 

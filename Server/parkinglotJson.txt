@@ -1,0 +1,173 @@
+{
+    "_declaration": {
+        "$": {
+            "version": "1.0",
+            "encoding": "UTF-8"
+        }
+    },
+    "response": {
+        "header": {
+            "resultCode": {
+                "_text": "00"
+            },
+            "resultMsg": {
+                "_text": "NORMAL SERVICE."
+            }
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "datetm": {
+                            "_text": "20200113233017.683"
+                        },
+                        "floor": {
+                            "_text": "T1 단기주차장지상층"
+                        },
+                        "parking": {
+                            "_text": "613"
+                        },
+                        "parkingarea": {
+                            "_text": "994"
+                        }
+                    },
+                    {
+                        "datetm": {
+                            "_text": "20200113233017.683"
+                        },
+                        "floor": {
+                            "_text": "T1 단기주차장지하1층"
+                        },
+                        "parking": {
+                            "_text": "340"
+                        },
+                        "parkingarea": {
+                            "_text": "983"
+                        }
+                    },
+                    {
+                        "datetm": {
+                            "_text": "20200113233017.683"
+                        },
+                        "floor": {
+                            "_text": "T1 단기주차장지하2층"
+                        },
+                        "parking": {
+                            "_text": "747"
+                        },
+                        "parkingarea": {
+                            "_text": "1339"
+                        }
+                    },
+                    {
+                        "datetm": {
+                            "_text": "20200113233017.681"
+                        },
+                        "floor": {
+                            "_text": "T2 단기주차장지상1층"
+                        },
+                        "parking": {
+                            "_text": "209"
+                        },
+                        "parkingarea": {
+                            "_text": "988"
+                        }
+                    },
+                    {
+                        "datetm": {
+                            "_text": "20200113233017.681"
+                        },
+                        "floor": {
+                            "_text": "T2 단기주차장지상2층"
+                        },
+                        "parking": {
+                            "_text": "101"
+                        },
+                        "parkingarea": {
+                            "_text": "1006"
+                        }
+                    },
+                    {
+                        "datetm": {
+                            "_text": "20200113233017.681"
+                        },
+                        "floor": {
+                            "_text": "T2 단기주차장지하M층"
+                        },
+                        "parking": {
+                            "_text": "386"
+                        },
+                        "parkingarea": {
+                            "_text": "751"
+                        }
+                    },
+                    {
+                        "datetm": {
+                            "_text": "20200113233017.684"
+                        },
+                        "floor": {
+                            "_text": "T1 장기 P1 주차장"
+                        },
+                        "parking": {
+                            "_text": "2201"
+                        },
+                        "parkingarea": {
+                            "_text": "2764"
+                        }
+                    },
+                    {
+                        "datetm": {
+                            "_text": "20200113233017.686"
+                        },
+                        "floor": {
+                            "_text": "T1 장기 P1 주차타워"
+                        },
+                        "parking": {
+                            "_text": "961"
+                        },
+                        "parkingarea": {
+                            "_text": "1034"
+                        }
+                    },
+                    {
+                        "datetm": {
+                            "_text": "20200113233017.685"
+                        },
+                        "floor": {
+                            "_text": "T1 장기 P2 주차장"
+                        },
+                        "parking": {
+                            "_text": "2190"
+                        },
+                        "parkingarea": {
+                            "_text": "2595"
+                        }
+                    },
+                    {
+                        "datetm": {
+                            "_text": "20200113233017.687"
+                        },
+                        "floor": {
+                            "_text": "T1 장기 P2 주차타워"
+                        },
+                        "parking": {
+                            "_text": "942"
+                        },
+                        "parkingarea": {
+                            "_text": "1034"
+                        }
+                    }
+                ]
+            },
+            "numOfRows": {
+                "_text": "10"
+            },
+            "pageNo": {
+                "_text": "1"
+            },
+            "totalCount": {
+                "_text": "13"
+            }
+        }
+    }
+}
