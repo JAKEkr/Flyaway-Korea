@@ -35,6 +35,9 @@ public:
 	afx_msg void OnBnClickedSerchbutton();
 	CString m_keyword;
 	afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
+
+protected:
+	afx_msg LRESULT OnDataUpdate(WPARAM wParam, LPARAM lParam);
 };
 
 

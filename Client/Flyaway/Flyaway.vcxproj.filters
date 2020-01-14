@@ -51,10 +51,10 @@
     <ClInclude Include="ParkinglotView.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="TAB1.h">
+    <ClInclude Include="ArrivalTabDialog.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="TAB2.h">
+    <ClInclude Include="DepartureTabDialog.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -86,10 +86,10 @@
     <ClCompile Include="ParkinglotView.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="TAB1.cpp">
+    <ClCompile Include="ArrivalTabDialog.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="TAB2.cpp">
+    <ClCompile Include="DepartureTabDialog.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

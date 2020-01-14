@@ -13,7 +13,8 @@ IMPLEMENT_DYNCREATE(CFlightInfoView, CFormView)
 CFlightInfoView::CFlightInfoView()
 	: CFormView(IDD_CFlightInfoView)
 {
-
+	departuresUrl.Format(_T("%s%s"), _T(SERVER_HOST), _T("/schedule/departures"));
+	arrivalsUrl.Format(_T("%s%s"), _T(SERVER_HOST), _T("/schedule/arrivals"));
 }
 
 CFlightInfoView::~CFlightInfoView()
@@ -23,12 +24,13 @@ CFlightInfoView::~CFlightInfoView()
 void CFlightInfoView::DoDataExchange(CDataExchange* pDX)
 {
 	CFormView::DoDataExchange(pDX);
-	DDX_Control(pDX, IDC_TAB1, m_mainTab);
+	DDX_Control(pDX, IDC_TabView, m_mainTab);
 }
 
 BEGIN_MESSAGE_MAP(CFlightInfoView, CFormView)
 	ON_WM_CTLCOLOR()
-	ON_NOTIFY(TCN_SELCHANGE, IDC_TAB1, &CFlightInfoView::OnTcnSelchangeTab1)
+	ON_NOTIFY(TCN_SELCHANGE, IDC_TabView, &CFlightInfoView::OnTcnSelchangeTab)
+	ON_MESSAGE(UM_UPDATE, &CFlightInfoView::OnDataUpdate)
 END_MESSAGE_MAP()
 
 
@@ -49,14 +51,10 @@ void CFlightInfoView::Dump(CDumpContext& dc) const
 #endif //_DEBUG
 
 
-// CFlightInfoView 메시지 처리기
-
-
 HBRUSH CFlightInfoView::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
 {
 	HBRUSH hbr = CFormView::OnCtlColor(pDC, pWnd, nCtlColor);
 
-	// TODO:  여기서 DC의 특성을 변경합니다.
 	switch (nCtlColor) {
 	case CTLCOLOR_DLG:   /// 다이얼로그 배경색을 white로.
 	{
@@ -75,7 +73,7 @@ HBRUSH CFlightInfoView::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
 		return (HBRUSH)::GetStockObject(NULL_BRUSH);
 	}
 	}
-	// TODO:  기본값이 적당하지 않으면 다른 브러시를 반환합니다.
+
 	return hbr;
 }
 
@@ -84,29 +82,25 @@ void CFlightInfoView::OnInitialUpdate()
 {
 	CFormView::OnInitialUpdate();
 
-	// TODO: 여기에 특수화된 코드를 추가 및/또는 기본 클래스를 호출합니다.
-	// TODO: 여기에 특수화된 코드를 추가 및/또는 기본 클래스를 호출합니다.
-	CString strTab = _T("");
-	strTab.Format(_T("가는편"));
-	this->m_mainTab.InsertItem(0, strTab, 0);
-	strTab.Format(_T("오는편"));
-	this->m_mainTab.InsertItem(1, strTab, 0);
+	this->m_mainTab.InsertItem(0, _T("가는편"), 0);
+	this->m_mainTab.InsertItem(1, _T("오는편"), 0);
 
 	CRect rect;
 	this->m_mainTab.GetClientRect(&rect);
-	this->m_tab1.Create(IDD_TAB1_DIALOG, &this->m_mainTab);
-	this->m_tab1.SetWindowPos(NULL, 5, 25, rect.Width() - 10, rect.Height() - 30, SWP_SHOWWINDOW | SWP_NOZORDER);
+	this->m_DepartureTab.Create(IDD_DepartureTabDialog, &this->m_mainTab);
+	this->m_DepartureTab.SetWindowPos(NULL, 5, 25, rect.Width() - 10, rect.Height() - 30, SWP_SHOWWINDOW | SWP_NOZORDER);
 
-	this->m_tab2.Create(IDD_TAB2_DIALOG, &this->m_mainTab);
-	this->m_tab2.SetWindowPos(NULL, 5, 25, rect.Width() - 10, rect.Height() - 30, SWP_SHOWWINDOW);
+	this->m_ArrivalTab.Create(IDD_ArrivalTabDialog, &this->m_mainTab);
+	this->m_ArrivalTab.SetWindowPos(NULL, 5, 25, rect.Width() - 10, rect.Height() - 30, SWP_SHOWWINDOW);
 
-	this->m_pwndShow = &this->m_tab1;
+	this->m_pwndShow = &this->m_DepartureTab;
+
+	((CFlyawayApp*)AfxGetApp())->m_pDoc->updateData(departuresUrl, m_hWnd);
 }
 
 
-void CFlightInfoView::OnTcnSelchangeTab1(NMHDR* pNMHDR, LRESULT* pResult)
+void CFlightInfoView::OnTcnSelchangeTab(NMHDR* pNMHDR, LRESULT* pResult)
 {
-	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 	if (this->m_pwndShow != NULL)
 	{
 		this->m_pwndShow->ShowWindow(SW_HIDE);
@@ -118,13 +112,21 @@ void CFlightInfoView::OnTcnSelchangeTab1(NMHDR* pNMHDR, LRESULT* pResult)
 	switch (tabIndex)
 	{
 	case 0:
-		this->m_tab1.ShowWindow(SW_SHOW);
-		this->m_pwndShow = &this->m_tab1;
+		this->m_DepartureTab.ShowWindow(SW_SHOW);
+		this->m_pwndShow = &this->m_DepartureTab;
+		((CFlyawayApp*)AfxGetApp())->m_pDoc->updateData(departuresUrl, m_hWnd);
 		break;
 	case 1:
-		this->m_tab2.ShowWindow(SW_SHOW);
-		this->m_pwndShow = &this->m_tab2;
+		this->m_ArrivalTab.ShowWindow(SW_SHOW);
+		this->m_pwndShow = &this->m_ArrivalTab;
+		((CFlyawayApp*)AfxGetApp())->m_pDoc->updateData(arrivalsUrl, m_hWnd);
 		break;
 	}
-	*pResult = 0;
+}
+
+
+afx_msg LRESULT CFlightInfoView::OnDataUpdate(WPARAM wParam, LPARAM lParam)
+{
+	m_pwndShow->SendMessage(UM_UPDATE, NULL, (LPARAM)GetDocument());
+	return TRUE;
 }

@@ -28,13 +28,14 @@ protected:
 
 	DECLARE_MESSAGE_MAP()
 public:
-	CComboBox m_combo;
+	CString url;
+	CComboBox m_Combo;
+	CListCtrl m_ParkinglotListView;
 	virtual void OnInitialUpdate();
-	afx_msg void OnComboBoxSelected();
-	CStatic m_map;
-	CListBox m_listT1;
-	CListBox m_listT2;
 	afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
+	afx_msg void OnCbnSelchangeComboSend();
+protected:
+	afx_msg LRESULT OnDataUpdate(WPARAM wParam, LPARAM lParam);
 };
 
 

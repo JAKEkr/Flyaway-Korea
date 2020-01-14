@@ -13,5 +13,10 @@
 #include <afxcontrolbars.h>
 
 #define UM_SWITCH WM_USER + 1
+#define UM_UPDATE WM_USER + 2
+
+#define SERVER_HOST "http://192.168.0.3:8888"
+
+#include <json/json.h>
 
 #endif //PCH_H

@@ -12,8 +12,11 @@
 
 #include "FlyawayDoc.h"
 #include "afxinet.h"
+#include "MainFrm.h"
 
 #include <propkey.h>
+
+#pragma warning(disable:4996)
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -31,8 +34,7 @@ END_MESSAGE_MAP()
 
 CFlyawayDoc::CFlyawayDoc() noexcept
 {
-	// TODO: 여기에 일회성 생성 코드를 추가합니다.
-
+    datas = NULL;
 }
 
 CFlyawayDoc::~CFlyawayDoc()
@@ -137,9 +139,23 @@ void CFlyawayDoc::Dump(CDumpContext& dc) const
 
 
 // CFlyawayDoc 명령
-BOOL CFlyawayDoc::updateData(CString url)
+BOOL CFlyawayDoc::updateData(CString url, HWND hWnd)
 {
     CString res = requestGET(url);
+
+    Json::Reader reader;
+    Json::Value root;
+
+    bool parsingRet = reader.parse(std::string((CStringA)res), root);
+
+    if (!root["success"].asString()._Equal("true"))
+        return FALSE;
+
+    Json::Value type = root["type"];
+    datas = root[type.asString()];
+
+    SendMessage(hWnd, UM_UPDATE, NULL, NULL);
+    //SendMessage(((CMainFrame*)(AfxGetApp()->m_pMainWnd))->GetActiveView()->m_hWnd, UM_UPDATE, NULL, NULL);
 
     return TRUE;
 }
@@ -159,7 +175,7 @@ CString CFlyawayDoc::requestGET(CString url)
 
     // url파싱
     AfxParseURL(url, dwServiceType, strServerName, strObject, nPort);
-    
+
     // http연결요청
     pSession = new CInternetSession;
     pHttpConnect = pSession->GetHttpConnection(strServerName, nPort);

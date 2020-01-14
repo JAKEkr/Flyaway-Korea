@@ -1,6 +1,6 @@
 ﻿#pragma once
-#include "TAB1.h"
-#include "TAB2.h"
+#include "DepartureTabDialog.h"
+#include "ArrivalTabDialog.h"
 
 
 // CFlightInfoView 폼 보기
@@ -29,13 +29,18 @@ protected:
 
 	DECLARE_MESSAGE_MAP()
 public:
+	CString departuresUrl;
+	CString arrivalsUrl;
+
 	afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
 	CTabCtrl m_mainTab;
-	CTAB1 m_tab1;
-	CTAB1 m_tab2;
+	CDepartureTabDialog m_DepartureTab;
+	CArrivalTabDialog m_ArrivalTab;
 	CWnd* m_pwndShow;
 	virtual void OnInitialUpdate();
-	afx_msg void OnTcnSelchangeTab1(NMHDR* pNMHDR, LRESULT* pResult);
+	afx_msg void OnTcnSelchangeTab(NMHDR* pNMHDR, LRESULT* pResult);
+protected:
+	afx_msg LRESULT OnDataUpdate(WPARAM wParam, LPARAM lParam);
 };
 
 

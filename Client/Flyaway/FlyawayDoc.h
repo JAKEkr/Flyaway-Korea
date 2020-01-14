@@ -46,6 +46,8 @@ protected:
 	void SetSearchContent(const CString& value);
 #endif // SHARED_HANDLERS
 public:
-	BOOL updateData(CString url);
+	Json::Value datas;
+
+	BOOL updateData(CString url, HWND hWnd);
 	CString requestGET(CString url);
 };
