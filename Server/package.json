@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "IIAIS Server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JAKEkr/IIAIS.git"
+  },
+  "author": "Jake Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JAKEkr/IIAIS/issues"
+  },
+  "homepage": "https://github.com/JAKEkr/IIAIS#readme",
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.6",
+    "morgan": "^1.9.1",
+    "node-cron": "^2.0.3",
+    "request": "^2.88.0",
+    "winston": "^3.2.1",
+    "xml2json": "^0.12.0"
+  }
+}
