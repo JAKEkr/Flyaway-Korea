@@ -15,7 +15,7 @@ Request.get("http://openapi.airport.kr/openapi/service/StatusOfPassengerFlights/
     if(error) {
         return console.dir(error);
     }
-        cron.schedule('* * * * * *',function(){
+        cron.schedule('30 * * * * *',function(){
             console.log('running test after 30s');
 
             fs.writeFile("C:/Users/USER/Flyaway-Korea/Server/arrivalsJson.txt",(convert.xml2json(body, options)), function(err) {

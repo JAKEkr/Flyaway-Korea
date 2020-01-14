@@ -15,14 +15,12 @@ Request.get("http://openapi.airport.kr/openapi/service/FacilitiesInformation/get
     if(error) {
         return console.dir(error);
     }
-        // cron.schedule('* * * * * *',function(){
-        //     console.log('running test after 30s');
 
-            fs.writeFile("C:/Users/USER/Flyaway-Korea/Server/facilitiesJson.txt",(convert.xml2json(body, options)), function(err) {
-                if(err) {
-                return console.log(err);
-            }
-            console.log("The file was saved!");
-        });
-    // }); 
+    fs.writeFile("C:/Users/USER/Flyaway-Korea/Server/facilitiesJson.txt",(convert.xml2json(body, options)), function(err) {
+        if(err) {
+            return console.log(err);
+        }
+        console.log("The file was saved!");
+    });
+
 });
