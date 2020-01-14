@@ -15,14 +15,11 @@ Request.get("http://openapi.airport.kr/openapi/service/StatusOfParking/getTracki
     if(error) {
         return console.dir(error);
     }
-        // cron.schedule('* * * * * *',function(){
-        //     console.log('running test after 30s');
-
-            fs.writeFile("C:/Users/USER/Flyaway-Korea/Server/parkinglotJson.txt",(convert.xml2json(body, options)), function(err) {
-                if(err) {
+    fs.writeFile("C:/Users/USER/Flyaway-Korea/Server/parkinglotJson.txt",(convert.xml2json(body, options)), function(err) {
+        if(err) {
                 return console.log(err);
-            }
-            console.log("The file was saved!");
-        });
-    // }); 
+        }
+        console.log("The file was saved!");
+    });
+
 });
