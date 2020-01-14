@@ -76,27 +76,35 @@ void CMenuButtonView::OnInitialUpdate()
 
 	GetParentFrame()->RecalcLayout();
 	ResizeParentToFit();
+
 	//버튼 폰트를 바꾸기 위한 설정입니다.
+	m_Font.CreatePointFont(120, _T("경기천년제목V Bold"));
+	m_Button_Home.SetFont(&m_Font);
+	m_Button_Flight.SetFont(&m_Font);
+	m_Button_Facility.SetFont(&m_Font);
+	m_Button_Parking.SetFont(&m_Font);
+	m_Button_Close.SetFont(&m_Font);
+
     //버튼 색상을 위한 설정입니다.
 	m_Button_Home.EnableWindowsTheming(FALSE);
-	m_Button_Home.SetFaceColor(RGB(197, 197, 230), true);
-	m_Button_Home.SetTextColor(RGB(102, 102, 189)); //텍스트의 색상을 변경합니다
+	m_Button_Home.SetFaceColor(RGB(211, 222, 232), true);
+	m_Button_Home.SetTextColor(RGB(51, 77, 97)); //텍스트의 색상을 변경합니다
 
 	m_Button_Flight.EnableWindowsTheming(FALSE);
-	m_Button_Flight.SetFaceColor(RGB(197, 197, 230), true);
-	m_Button_Flight.SetTextColor(RGB(102, 102, 189)); //텍스트의 색상을 변경합니다
+	m_Button_Flight.SetFaceColor(RGB(211, 222, 232), true);
+	m_Button_Flight.SetTextColor(RGB(51, 77, 97)); //텍스트의 색상을 변경합니다
 
 	m_Button_Facility.EnableWindowsTheming(FALSE);
-	m_Button_Facility.SetFaceColor(RGB(197, 197, 230), true);
-	m_Button_Facility.SetTextColor(RGB(102, 102, 189)); //텍스트의 색상을 변경합니다
+	m_Button_Facility.SetFaceColor(RGB(211, 222, 232), true);
+	m_Button_Facility.SetTextColor(RGB(51, 77, 97)); //텍스트의 색상을 변경합니다
 
 	m_Button_Parking.EnableWindowsTheming(FALSE);
-	m_Button_Parking.SetFaceColor(RGB(197, 197, 230), true);
-	m_Button_Parking.SetTextColor(RGB(102, 102, 189)); //텍스트의 색상을 변경합니다
+	m_Button_Parking.SetFaceColor(RGB(211, 222, 232), true);
+	m_Button_Parking.SetTextColor(RGB(51, 77, 97)); //텍스트의 색상을 변경합니다
 
 	m_Button_Close.EnableWindowsTheming(FALSE);
-	m_Button_Close.SetFaceColor(RGB(197, 197, 230), true);
-	m_Button_Close.SetTextColor(RGB(102, 102, 189)); //텍스트의 색상을 변경합니다
+	m_Button_Close.SetFaceColor(RGB(211, 222, 232), true);
+	m_Button_Close.SetTextColor(RGB(51, 77, 97)); //텍스트의 색상을 변경합니다
 }
 
 void CMenuButtonView::OnBnClickedHomebutton()

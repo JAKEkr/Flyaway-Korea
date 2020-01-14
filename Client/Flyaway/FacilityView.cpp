@@ -63,11 +63,11 @@ void CFacilityView::OnInitialUpdate()
 
 	m_FacilityListView.SetExtendedStyle(LVS_EX_FULLROWSELECT);
 
-	m_FacilityListView.InsertColumn(0, _T("No"), NULL, 100);
-	m_FacilityListView.InsertColumn(1, _T("매장명"), NULL, 200);
-	m_FacilityListView.InsertColumn(2, _T("위치"), NULL, 300);
-	m_FacilityListView.InsertColumn(3, _T("시간"), NULL, 300);
-	m_FacilityListView.InsertColumn(4, _T("전화번호"), NULL, 300);
+	m_FacilityListView.InsertColumn(0, _T("No"), NULL, 50);
+	m_FacilityListView.InsertColumn(1, _T("매장명"), NULL, 127);
+	m_FacilityListView.InsertColumn(2, _T("위치"), NULL, 350);
+	m_FacilityListView.InsertColumn(3, _T("시간"), NULL, 185);
+	m_FacilityListView.InsertColumn(4, _T("전화번호"), NULL, 185);
 
 	UpdateData(FALSE);
 }

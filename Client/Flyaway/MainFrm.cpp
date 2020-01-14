@@ -95,7 +95,7 @@ BOOL CMainFrame::OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext* pContext)
 	}
 
 	GetClientRect(&cr);
-	CSize upperViewSize(cr.Width(), cr.Height() / 4);
+	CSize upperViewSize(cr.Width(), cr.Height() / 5);
 	CSize lowerViewSize(cr.Width(), 3 * cr.Height() / 4);
 
 	((CFlyawayApp*)AfxGetApp())->m_pDoc = (CFlyawayDoc*)(pContext->m_pCurrentDoc);

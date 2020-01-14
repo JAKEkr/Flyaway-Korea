@@ -78,10 +78,10 @@ void CParkinglotView::OnInitialUpdate()
 	m_Combo.SetCurSel(0);
 
 	m_ParkinglotListView.DeleteAllItems();
-	m_ParkinglotListView.InsertColumn(0, _T("No"), NULL, 100);
-	m_ParkinglotListView.InsertColumn(1, _T("구분"), NULL, 300);
-	m_ParkinglotListView.InsertColumn(2, _T("주차 가능 수"), NULL, 300);
-	m_ParkinglotListView.InsertColumn(3, _T("총 주차 구역"), NULL, 300);
+	m_ParkinglotListView.InsertColumn(0, _T("No"), NULL, 50);
+	m_ParkinglotListView.InsertColumn(1, _T("구분"), NULL, 248);
+	m_ParkinglotListView.InsertColumn(2, _T("주차 가능 수"), NULL, 290);
+	m_ParkinglotListView.InsertColumn(3, _T("총 주차 구역"), NULL, 290);
 
 	((CFlyawayApp*)AfxGetApp())->m_pDoc->updateData(url + _T("T1"), m_hWnd);
 }

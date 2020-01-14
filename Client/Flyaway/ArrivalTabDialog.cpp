@@ -42,15 +42,15 @@ BOOL CArrivalTabDialog::OnInitDialog()
 
 	m_ArrivalListView.SetExtendedStyle(LVS_EX_FULLROWSELECT);
 
-	m_ArrivalListView.InsertColumn(0, _T("No"), NULL, 100);
-	m_ArrivalListView.InsertColumn(1, _T("항공사"), NULL, 200);
-	m_ArrivalListView.InsertColumn(2, _T("편명"), NULL, 300);
-	m_ArrivalListView.InsertColumn(3, _T("예정시간"), NULL, 300);
-	m_ArrivalListView.InsertColumn(4, _T("변경시간"), NULL, 300);
-	m_ArrivalListView.InsertColumn(5, _T("출발지"), NULL, 300);
-	m_ArrivalListView.InsertColumn(6, _T("출구"), NULL, 300);
-	m_ArrivalListView.InsertColumn(7, _T("현황"), NULL, 300);
-	m_ArrivalListView.InsertColumn(8, _T("터미널"), NULL, 300);
+	m_ArrivalListView.InsertColumn(0, _T("No"), NULL, 50);
+	m_ArrivalListView.InsertColumn(1, _T("항공사"), NULL, 152);
+	m_ArrivalListView.InsertColumn(2, _T("편명"), NULL, 125);
+	m_ArrivalListView.InsertColumn(3, _T("예정시간"), NULL, 80);
+	m_ArrivalListView.InsertColumn(4, _T("변경시간"), NULL, 80);
+	m_ArrivalListView.InsertColumn(5, _T("출발지"), NULL, 100);
+	m_ArrivalListView.InsertColumn(6, _T("출구"), NULL, 75);
+	m_ArrivalListView.InsertColumn(7, _T("현황"), NULL, 75);
+	m_ArrivalListView.InsertColumn(8, _T("터미널"), NULL, 75);
 
 	return TRUE;
 }

@@ -15,7 +15,7 @@
 #define UM_SWITCH WM_USER + 1
 #define UM_UPDATE WM_USER + 2
 
-#define SERVER_HOST "http://192.168.0.3:8888"
+#define SERVER_HOST "http://27.96.135.10:8888"
 
 #include <json/json.h>
 
