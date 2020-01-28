@@ -1,8 +1,9 @@
-<center><img src="https://user-images.githubusercontent.com/43188317/73238321-edb61d80-41db-11ea-8be0-d7a0567a0700.png" width="450" height="450"></center>
+<p align="center"><img src="https://user-images.githubusercontent.com/43188317/73238321-edb61d80-41db-11ea-8be0-d7a0567a0700.png" width="450" height="450">
 
 본 프로그램은 세종대학교 심화프로그래밍설계 수업의 팀 프로젝트 활동을 통해 개발되었습니다.
+</p>
 
-
+<br />
 
 # Flyaway-Korea 🇰🇷
 
