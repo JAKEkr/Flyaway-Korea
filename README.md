@@ -7,18 +7,18 @@
 
 # Flyaway-Korea 🇰🇷
 
-> 공공데이터포털의 Open API를 활용한 MFC기반의 인천국제공항공사 정보 조회 시스템
+> 공공데이터포털의 Open API를 활용한 MFC기반의 인천국제공항 정보 조회 시스템
 
 
 
-## [![C++](https://img.shields.io/badge/C%2B%2B-74.8-hotpink?logo=c%2B%2B&logoColor=blue)](https://docs.microsoft.com/en-us/cpp/cpp/cpp-language-reference?view=vs-2019) [![Javascript](https://img.shields.io/badge/Javascript-17.5-yellow?logo=javascript&logoColor=yellow)](https://www.javascript.com/) [![made-with-MFC](https://img.shields.io/badge/Made%20with-MFC-1f425f.svg?logo=microsoft&logoColor=blue)](https://docs.microsoft.com/en-us/cpp/mfc/mfc-desktop-applications?view=vs-2019) [![made-with-NodeJS](https://img.shields.io/badge/Made%20with-NodeJS-green.svg?logo=node.js)](https://nodejs.org/en/) [![NPM Version](https://img.shields.io/npm/v/npm.svg?logo=npm)](https://npmjs.org/package/esta)  [![size](https://img.shields.io/github/repo-size/JAKEkr/Flyaway-Korea)](https://github.com/JAKEkr/Flyaway-Korea.git) [![MIT license](https://img.shields.io/badge/License-MIT-red.svg)](https://lbesson.mit-license.org/)
+## [![C++](https://img.shields.io/badge/C%2B%2B-74.8%25-hotpink?logo=c%2B%2B&logoColor=blue)](https://docs.microsoft.com/en-us/cpp/cpp/cpp-language-reference?view=vs-2019) [![Javascript](https://img.shields.io/badge/Javascript-17.5%25-yellow?logo=javascript&logoColor=yellow)](https://www.javascript.com/) [![made-with-MFC](https://img.shields.io/badge/Made%20with-MFC-1f425f.svg?logo=microsoft&logoColor=blue)](https://docs.microsoft.com/en-us/cpp/mfc/mfc-desktop-applications?view=vs-2019) [![made-with-NodeJS](https://img.shields.io/badge/Made%20with-NodeJS-green.svg?logo=node.js)](https://nodejs.org/en/) [![NPM Version](https://img.shields.io/npm/v/npm.svg?logo=npm)](https://npmjs.org/package/esta)  [![size](https://img.shields.io/github/repo-size/JAKEkr/Flyaway-Korea)](https://github.com/JAKEkr/Flyaway-Korea.git) [![MIT license](https://img.shields.io/badge/License-MIT-red.svg)](https://lbesson.mit-license.org/)
 
 <br />
 
 ## 개발 요소
 
 - MFC 기반 View-Document 모델 구조의 클라이언트 프로그램 개발
-- MongoDB와 NodeJS 기반의 서버 구축 및 Restful API 개발
+- MongoDB와 NodeJS 기반의 서버 구축 및 RESTful API 개발
 
 <br />
 
@@ -60,13 +60,13 @@
 
 ## 팀 소개
 
-- 설민욱, Front-end (https://github.com/blogSoul)
+- 설민욱, Front-end, [@blogSoul](https://github.com/blogSoul)
 
-- 이종진, Back-end (https://github.com/JAKEkr)
+- 이종진, Back-end, [@JAKEkr](https://github.com/JAKEkr)
 
-- 이은지, Front-end (https://github.com/ej0703)
+- 이은지, Front-end, [@ej0703](https://github.com/ej0703)
 
-- Soundarya Sundari, Back-end (https://github.com/codergit1)
+- Soundarya Sundari, Back-end, [@codergit1](https://github.com/codergit1)
 
 <br />
 
